@@ -12,9 +12,9 @@
     "fix": "pnpm '/(lint|format):fix$/'",
     "format": "prettier \"**/*\" --ignore-unknown --check --cache",
     "format:fix": "prettier \"**/*\" --ignore-unknown --write --cache",
-    "lint": "eslint . --ignore-path .gitignore --cache --max-warnings 0",
-    "lint:fix": "eslint . --ignore-path .gitignore --fix --cache",
-    "check": "turbo format lint types",
+    "lint": "eslint . --cache --max-warnings 0",
+    "lint:fix": "eslint . --fix --cache",
+    "check": "turbo --continue format lint types",
     "codegen": "graphql-codegen"
   },
   "dependencies": {
@@ -48,11 +48,5 @@
     "typescript": "^5.5.2"
   },
   "packageManager": "pnpm@9.4.0",
-  "eslintConfig": {
-    "extends": "@2digits",
-    "ignorePatterns": [
-      "src/server/*/generated/**"
-    ]
-  },
   "prettier": "@2digits/prettier-config"
 }

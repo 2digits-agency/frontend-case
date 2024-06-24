@@ -1,5 +1,5 @@
 import type { DocumentNode } from 'graphql';
-import { resolveRequestDocument } from 'graphql-request';
+import { analyzeDocument } from 'graphql-request';
 import type { FetchOptions } from 'ofetch';
 
 import { gqlClient } from './client';
@@ -11,11 +11,11 @@ export const PreprSdk = getSdk(
     variables?: TVariables,
     options?: FetchOptions<'json'>,
   ) => {
-    const { query, operationName } = resolveRequestDocument(document);
+    const { expression, operationName } = analyzeDocument(document);
 
     const { data } = await gqlClient<{ data: TData }>('', {
       ...options,
-      body: { query, variables, operationName },
+      body: { query: expression, variables, operationName },
     });
 
     return data;

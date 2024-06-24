@@ -1,4 +1,3 @@
-// eslint-disable-next-line jsdoc/check-tag-names
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
