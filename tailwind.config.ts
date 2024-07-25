@@ -8,9 +8,14 @@ const config = withTV({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        barlow: ['Barlow', 'sans-serif'],
+      },
       backgroundImage: {
+        '2digits-bg': "url('/assets/2digits.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'custom-gradient': 'linear-gradient(to right, #02041f, #03054f, #02043d)',
       },
     },
   },

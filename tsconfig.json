@@ -15,7 +15,9 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/app/blogs/layout.tsx",
+    "src/app/blogs/[slug]/.layout.tsx"
   ],
   "exclude": ["node_modules"]
 }

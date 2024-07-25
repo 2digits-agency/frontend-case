@@ -5,3 +5,22 @@ query Example {
     }
   }
 }
+
+query BlogsQuery($locale: String!, $limit: Int) {
+  Blogs(locale: $locale, limit: $limit) {
+    items {
+      title
+      content {
+        ... on Text {
+          text
+        }
+      }
+      categories {
+        slug
+      }
+      banner_image {
+        url
+      }
+    }
+  }
+}
