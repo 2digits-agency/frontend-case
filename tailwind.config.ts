@@ -20,6 +20,7 @@ const config = withTV({
     },
   },
   plugins: [],
+  darkMode: 'class',
 });
 
 export default config;

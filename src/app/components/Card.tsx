@@ -1,17 +1,8 @@
 import Image from 'next/image';
 
-export interface CardProps {
-  data: {
-    banner_image: { url: string };
-    categories: [{ slug: string }];
-    content: { text: string }[];
-    title: string;
-    _id: string;
-    _slug: string;
-  };
-}
+import type { ICard } from '@/app/types';
 
-const Card: React.FC<CardProps> = ({ data }: CardProps) => {
+const Card: React.FC<{ data: ICard }> = ({ data }: ICard) => {
   const { _slug, title, content, categories, banner_image } = data;
 
   return (
@@ -21,9 +12,9 @@ const Card: React.FC<CardProps> = ({ data }: CardProps) => {
           <div className="relative h-[240] w-full overflow-hidden rounded-lg">
             <Image
               className="rounded-lg"
-              src={banner_image.url}
+              src={banner_image?.url as string}
               sizes="(max-width: 240px)"
-              alt={title}
+              alt={title ?? ''}
               objectFit="cover"
               layout="fill"
             />
@@ -38,10 +29,8 @@ const Card: React.FC<CardProps> = ({ data }: CardProps) => {
           <h5 className="mb-2 text-2xl font-bold text-gray-900">{title}</h5>
 
           <p className="overflow-hidden text-clip py-5 text-sm font-thin tracking-tight text-gray-600">
-            {content[0]?.text}
+            {content[0].text}
           </p>
-
-          {/* <span className="truncate-characters">{text}</span> */}
 
           <span className="inline-flex items-center rounded bg-transparent p-2 text-center text-sm font-medium text-gray-900 hover:bg-white focus:bg-gray-400 focus:outline-none">
             Read more

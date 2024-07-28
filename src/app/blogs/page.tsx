@@ -2,17 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-import { getAllBlogs } from '../actions';
-import Card from '../components/Card';
-
-interface BlogPost {
-  banner_image: { url: string };
-  categories: [{ slug: string }];
-  content: { text: string }[];
-  title: string;
-  _id: string;
-  _slug: string;
-}
+import Card from '@/app/components/Card';
+import type { ICard } from '@/app/types';
+import { getAllBlogs } from '@/app/utils/actions';
 
 interface PaginationState {
   currentPage: number;
@@ -21,11 +13,31 @@ interface PaginationState {
   endIndex: number;
 }
 
-const ITEM_PER_PAGE = 5;
+const ITEM_PER_PAGE = 9;
+
+const createPagination = (length: number, currentPage: number) => {
+  const array = [];
+  for (let i = 0; i < length; i++) {
+    if (
+      i === 0 ||
+      i === currentPage - 2 ||
+      i === currentPage - 1 ||
+      i === currentPage ||
+      i === length - 2 ||
+      i === length - 1
+    ) {
+      array.push(i + 1);
+    } else if (i + 3 === currentPage || i + 2 === length - 1) {
+      array.push('...');
+    }
+  }
+
+  return array;
+};
 
 export default function Blogs() {
-  const [blogs, setBlogs] = useState<BlogPost[]>([]);
-  const [filteredBlogs, setFilteredBlogs] = useState<BlogPost[]>([]);
+  const [blogs, setBlogs] = useState<ICard[]>([]);
+  const [filteredBlogs, setFilteredBlogs] = useState<ICard[]>([]);
   const [search, setSearch] = useState<{
     input: string;
     slug: { label: string; value: string };
@@ -37,6 +49,7 @@ export default function Blogs() {
     startIndex: 0,
     endIndex: ITEM_PER_PAGE,
   });
+  console.log('🚀 ~ Blogs ~ pagination:', pagination);
 
   //initial data fetch
   useEffect(() => {
@@ -66,9 +79,9 @@ export default function Blogs() {
   useEffect(() => {
     const handleFilter = () => {
       const NewList = blogs
-        .filter((blog) => blog.title.toLowerCase().includes(search.input.toLowerCase()))
+        .filter((blog) => blog?.title?.toLowerCase().includes(search.input.toLowerCase()))
         .filter((blog) =>
-          blog.categories[0].slug.toLowerCase().includes(search.slug.value.toLowerCase()),
+          blog?.categories[0]?.slug?.toLowerCase().includes(search.slug.value.toLowerCase()),
         );
 
       setPagination({
@@ -108,7 +121,7 @@ export default function Blogs() {
       setPagination({
         ...pagination,
         currentPage: pagination.currentPage - 1,
-        startIndex: Math.min(pagination.startIndex - ITEM_PER_PAGE, 0),
+        startIndex: Math.max(pagination.startIndex - ITEM_PER_PAGE, 0),
         endIndex: Math.min(pagination.startIndex, filteredBlogs.length),
       });
     }
@@ -122,28 +135,8 @@ export default function Blogs() {
     });
   };
 
-  const createPagination = (length: number, currentPage: number) => {
-    const array = [];
-    for (let i = 0; i < length; i++) {
-      if (
-        i === 0 ||
-        i === currentPage - 2 ||
-        i === currentPage - 1 ||
-        i === currentPage ||
-        i === length - 2 ||
-        i === length - 1
-      ) {
-        array.push(i + 1);
-      } else if (i + 3 === currentPage || i + 2 === length - 1) {
-        array.push('...');
-      }
-    }
-
-    return array;
-  };
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start bg-white">
+    <main className="flex min-h-screen flex-col items-center justify-start bg-white text-black">
       {/* Banner */}
       <section className="mt-px w-full bg-2digits-bg bg-[url('/assets/blogs.png')] bg-cover bg-center bg-no-repeat px-6 py-48 text-center text-white">
         <h2 className="m-auto max-w-screen-md text-4xl font-bold uppercase md:text-6xl lg:text-9xl">
@@ -151,6 +144,10 @@ export default function Blogs() {
         </h2>
       </section>
 
+      {/* Filter By Input */}
+      {/* As a user, I want to be able to search through different blog posts on an archive page so that I can only view relevant blogs.
+        - Able to search in a text input field
+        - When searching filter the blog items on the search phrase */}
       <section className="flex w-full flex-col justify-between gap-3 bg-[#EFEFF8] px-6 py-12 md:px-36">
         <p className="text-left">Search for blogs</p>
 
@@ -174,9 +171,13 @@ export default function Blogs() {
       </section>
 
       <section className="m-6 dark:text-black">
+        {/* Topic Filter */}
+        {/* As a user, I want to be able to filter blog posts on an archive page so that I can see only relevant blogs.
+          - Only able to select only on a single filter
+          - When filtering filter the blog items with the current selected filter
+          - When clicking on "All blogs" show all the results */}
         <h5>Topics</h5>
 
-        {/* Topic Filter */}
         <div className="my-6">
           {Array.from(['all blogs', 'interview', 'blog', 'whitepaper'], (text, index) => (
             <button
@@ -198,8 +199,8 @@ export default function Blogs() {
         {/* Blogs */}
         {filteredBlogs.length > 0 ? (
           <div className="flex max-w-[1200px] flex-col justify-center gap-4 md:grid md:grid-cols-3">
-            {filteredBlogs.slice(pagination.startIndex, pagination.endIndex).map((item, index) => (
-              <Card key={index} data={item} />
+            {filteredBlogs.slice(pagination.startIndex, pagination.endIndex).map((item: ICard) => (
+              <Card key={item._id} data={item} />
             ))}
           </div>
         ) : (
@@ -208,8 +209,9 @@ export default function Blogs() {
       </section>
 
       {/* pagination */}
+      {/* Pagination by TotalPages */}
       {pagination.totalPages > 0 ? (
-        <section className="m-3 flex items-center gap-5">
+        <section className="m-3 flex items-center gap-4">
           <button disabled={pagination.currentPage === 1} type="button" onClick={handlePrev}>
             <svg
               className="inline-block size-4 text-gray-200 rtl:rotate-180 dark:text-black"
@@ -240,10 +242,11 @@ export default function Blogs() {
               </button>
             );
           })} */}
+
           {createPagination(pagination.totalPages, pagination.currentPage).map((page, index) => {
             return (
               <button
-                disabled={pagination.currentPage === page}
+                disabled={pagination.currentPage === page || page === '...'}
                 type="button"
                 className={`rounded-lg border border-gray-100 px-4 py-2 text-black ${pagination.currentPage === page ? 'bg-[#371172] text-white' : ''}`}
                 key={index}

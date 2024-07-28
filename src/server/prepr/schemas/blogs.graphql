@@ -39,3 +39,12 @@ query Similar_Blogs($limit: Int, $similarBlogsId: String!) {
     }
   }
 }
+
+query BlogsByTitle($where: BlogWhereInput) {
+  Blogs(where: $where) {
+    items {
+      title
+    }
+    total
+  }
+}
