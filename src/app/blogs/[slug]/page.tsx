@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import CardList from '@/app/components/CardList';
+import Card from '@/app/components/Card';
 import { PreprSdk } from '@/server/prepr';
 
 export default async function BlogDetail({ params }: { params: { slug: string } }) {
@@ -42,9 +42,11 @@ export default async function BlogDetail({ params }: { params: { slug: string } 
         <h2 className="mt-12 py-5 text-3xl md:text-5xl">Gerelateerde blogs</h2>
 
         {Similar_Blogs?.items?.length > 1 ? (
-          <CardList items={Similar_Blogs?.items} />
+          <div className="mx-auto flex w-full max-w-screen-2xl flex-col gap-12 py-5 md:m-auto md:flex-row">
+            {Similar_Blogs?.items.map((item, index) => <Card key={index} data={item} />)}
+          </div>
         ) : (
-          <p>Geen gerelateerde blog gevonden.</p>
+          <p>Geen blog post gevonden.</p>
         )}
       </section>
     </article>
