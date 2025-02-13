@@ -1,0 +1,9 @@
+[tools]
+pnpm = "10.2.0"
+node = "22.13.1"
+
+[env]
+FORCE_COLOR = "1"
+
+[settings]
+pin = true
