@@ -37,8 +37,8 @@ importers:
         specifier: ^2.10.8
         version: 2.10.8(@types/node@22.13.4)(eslint@9.20.1(jiti@2.4.1))(graphql@16.10.0)(jiti@2.4.1)(tailwindcss@3.4.17)(typescript@5.7.3)
       '@2digits/prettier-config':
-        specifier: ^2.6.6
-        version: 2.6.6(prettier@3.5.1)
+        specifier: ^2.7.2
+        version: 2.7.2(prettier@3.5.1)
       '@2digits/tsconfig':
         specifier: ^0.6.3
         version: 0.6.3(typescript@5.7.3)
@@ -102,10 +102,10 @@ packages:
   '@2digits/eslint-plugin@2.3.17':
     resolution: {integrity: sha512-7U0QI6JLu7FhuVSEWYWqeE/wIxmj2aJBgcSZ43u1F7hbfsgd9e+m9Tu0EAS/GLoYmPtp3WSeEeTwLo2pH60ULQ==}
 
-  '@2digits/prettier-config@2.6.6':
-    resolution: {integrity: sha512-EqR2zMoyctJ3ht/hAYFtOsgJj4yTSh+nUgIfxvvwogAjzNjIrHTrdkM9vh1BWqn/uXfsXnUthqQzc2trZKYekA==}
+  '@2digits/prettier-config@2.7.2':
+    resolution: {integrity: sha512-VAoCQ5i36snbNE0dRPfHchEjwPB6FCWYQly6tMeoUqW6NkLRsKOzFB2T7YwNHoxkAtcTrjc3mHaQBguaBzIvZw==}
     peerDependencies:
-      prettier: 3.4.2
+      prettier: 3.5.1
 
   '@2digits/tsconfig@0.6.3':
     resolution: {integrity: sha512-BfQFRaQPRMNcUs3P1Mi+aKO2I1OowY8OgGojjg6IBn+iS4QNNwyuejS5Esnde8L5Qi8qbbac2Xupw3VzWF9cYw==}
@@ -3120,8 +3120,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier-plugin-toml@2.0.1:
-    resolution: {integrity: sha512-99z1YOkViECHtXQjGIigd3talI/ybUI1zB3yniAwUrlWBXupNXThB1hM6bwSMUEj2/+tomTlMtT98F5t4s8IWA==}
+  prettier-plugin-toml@2.0.2:
+    resolution: {integrity: sha512-tUIIhyfdVX5DMsLGKX/2qaEwi3W48OkUSR7XC91PRI5jFzhexmaYWkrSP1Xh/eWUcEc0TVMQenM3lB09xLQstQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       prettier: ^3.0.3
@@ -3905,7 +3905,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@2digits/prettier-config@2.6.6(prettier@3.5.1)':
+  '@2digits/prettier-config@2.7.2(prettier@3.5.1)':
     dependencies:
       '@2digits/constants': 0.3.5
       '@ianvs/prettier-plugin-sort-imports': 4.4.1(prettier@3.5.1)
@@ -3916,7 +3916,7 @@ snapshots:
       prettier-plugin-jsdoc: 1.3.2(prettier@3.5.1)
       prettier-plugin-sql: 0.18.1(prettier@3.5.1)
       prettier-plugin-tailwindcss: 0.6.11(@ianvs/prettier-plugin-sort-imports@4.4.1(prettier@3.5.1))(prettier-plugin-jsdoc@1.3.2(prettier@3.5.1))(prettier@3.5.1)
-      prettier-plugin-toml: 2.0.1(prettier@3.5.1)
+      prettier-plugin-toml: 2.0.2(prettier@3.5.1)
     transitivePeerDependencies:
       - '@prettier/plugin-pug'
       - '@shopify/prettier-plugin-liquid'
@@ -7751,7 +7751,7 @@ snapshots:
       '@ianvs/prettier-plugin-sort-imports': 4.4.1(prettier@3.5.1)
       prettier-plugin-jsdoc: 1.3.2(prettier@3.5.1)
 
-  prettier-plugin-toml@2.0.1(prettier@3.5.1):
+  prettier-plugin-toml@2.0.2(prettier@3.5.1):
     dependencies:
       '@taplo/lib': 0.4.0-alpha.2
       prettier: 3.5.1
