@@ -30,8 +30,8 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       tailwind-variants:
-        specifier: ^0.3.1
-        version: 0.3.1(tailwindcss@3.4.17)
+        specifier: ^1.0.0
+        version: 1.0.0(tailwindcss@3.4.17)
     devDependencies:
       '@2digits/eslint-config':
         specifier: ^2.10.8
@@ -495,6 +495,7 @@ packages:
 
   '@eslint-react/tools@1.19.0':
     resolution: {integrity: sha512-UPIa2KPPvUKfrO8qCbVBlnG1Z4P/A0dA8J3RRHryJcIisVOyWqaNhXky+nSE6ebmv+vie33/Y45JKTUCyLGa6w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@eslint-react/types@1.19.0':
     resolution: {integrity: sha512-0IWLNYSl2dTjsSpCgVxyvPtX3KZBmG1AoMNk8rXYTmseIM4Jscmxbj9fIdy2kWtQpFETGpYlBCx6YugOIEAjTQ==}
@@ -3500,11 +3501,11 @@ packages:
     resolution: {integrity: sha512-7gr8p9TQP6RAHusBOSLs46F4564ZrjV8xFmw5zCmgmhGUcw2hxsShhJ6CEiHQMgPDwAQ1fWHPM0ypc4RMAig4A==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwind-merge@2.5.4:
-    resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
+  tailwind-merge@3.0.2:
+    resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
 
-  tailwind-variants@0.3.1:
-    resolution: {integrity: sha512-krn67M3FpPwElg4FsZrOQd0U26o7UDH/QOkK8RNaiCCrr052f6YJPBUfNKnPo/s/xRzNPtv1Mldlxsg8Tb46BQ==}
+  tailwind-variants@1.0.0:
+    resolution: {integrity: sha512-2WSbv4ulEEyuBKomOunut65D8UZwxrHoRfYnxGcQNnHqlSCp2+B7Yz2W+yrNDrxRodOXtGD/1oCcKGNBnUqMqA==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwindcss: '*'
@@ -8183,11 +8184,11 @@ snapshots:
       '@pkgr/core': 0.1.1
       tslib: 2.8.1
 
-  tailwind-merge@2.5.4: {}
+  tailwind-merge@3.0.2: {}
 
-  tailwind-variants@0.3.1(tailwindcss@3.4.17):
+  tailwind-variants@1.0.0(tailwindcss@3.4.17):
     dependencies:
-      tailwind-merge: 2.5.4
+      tailwind-merge: 3.0.2
       tailwindcss: 3.4.17
 
   tailwindcss@3.4.17:
