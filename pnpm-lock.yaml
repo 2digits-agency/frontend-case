@@ -16,16 +16,16 @@ importers:
         version: 7.1.2(graphql@16.10.0)
       next:
         specifier: ^15.1.7
-        version: 15.1.7(@babel/core@7.24.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+        version: 15.1.7(@babel/core@7.24.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       ofetch:
         specifier: ^1.4.1
         version: 1.4.1
       react:
-        specifier: ^19.0.0
-        version: 19.0.0
+        specifier: ^19.2.1
+        version: 19.2.1
       react-dom:
-        specifier: ^19.0.0
-        version: 19.0.0(react@19.0.0)
+        specifier: ^19.2.1
+        version: 19.2.1(react@19.2.1)
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
@@ -61,11 +61,11 @@ importers:
         specifier: ^22.13.4
         version: 22.13.4
       '@types/react':
-        specifier: ^19.0.9
-        version: 19.0.9
+        specifier: ^19.2.7
+        version: 19.2.7
       '@types/react-dom':
-        specifier: ^19.0.3
-        version: 19.0.3(@types/react@19.0.9)
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.7)
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.5.2)
@@ -495,6 +495,7 @@ packages:
 
   '@eslint-react/tools@1.19.0':
     resolution: {integrity: sha512-UPIa2KPPvUKfrO8qCbVBlnG1Z4P/A0dA8J3RRHryJcIisVOyWqaNhXky+nSE6ebmv+vie33/Y45JKTUCyLGa6w==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@eslint-react/types@1.19.0':
     resolution: {integrity: sha512-0IWLNYSl2dTjsSpCgVxyvPtX3KZBmG1AoMNk8rXYTmseIM4Jscmxbj9fIdy2kWtQpFETGpYlBCx6YugOIEAjTQ==}
@@ -784,6 +785,7 @@ packages:
   '@graphql-tools/prisma-loader@8.0.2':
     resolution: {integrity: sha512-8d28bIB0bZ9Bj0UOz9sHagVPW+6AHeqvGljjERtwCnWl8OCQw2c2pNboYXISLYUG5ub76r4lDciLLTU+Ks7Q0w==}
     engines: {node: '>=16.0.0'}
+    deprecated: 'This package was intended to be used with an older versions of Prisma.\nThe newer versions of Prisma has a different approach to GraphQL integration.\nTherefore, this package is no longer needed and has been deprecated and removed.\nLearn more: https://www.prisma.io/graphql'
     peerDependencies:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
@@ -1131,13 +1133,13 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/react-dom@19.0.3':
-    resolution: {integrity: sha512-0Knk+HJiMP/qOZgMyNFamlIjw9OFCsyC2ZbigmEEyXXixgre6IQpm/4V+r3qH4GC1JPvRJKInw+on2rV6YZLeA==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
-      '@types/react': ^19.0.0
+      '@types/react': ^19.2.0
 
-  '@types/react@19.0.9':
-    resolution: {integrity: sha512-FedNTYgmMwSZmD1Sru/W1gJKuiYCN/3SuBkmZkcxX+FpO5zL76B22A9YNfAKg4HQO3Neh/30AiynP6BELdU0qQ==}
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@types/unist@3.0.2':
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
@@ -1590,8 +1592,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+  csstype@3.2.3:
+    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
   data-view-buffer@1.0.1:
     resolution: {integrity: sha512-0lht7OugA5x3iJLOWFhWK/5ehONdprk0ISXqVFn/NFrDu+cuc8iADFrGQz5BnRK7LLU3JmkbXSxaqX+/mXYtUA==}
@@ -2752,6 +2754,7 @@ packages:
   next@15.1.7:
     resolution: {integrity: sha512-GNeINPGS9c6OZKCvKypbL8GTsT5GhWPp4DM0fzkXJuXMilOO2EeFxuAY6JZbtk6XIl6Ws10ag3xRINDjSO5+wg==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3151,16 +3154,16 @@ packages:
     resolution: {integrity: sha512-80WNmd9DA0tmZrw9qQa62GPPWfuXJknrmVmLcxvq4uZBdYqb1wYoKTmnlGUchvVWe0XiLupYkBoXVOxz3C8DYQ==}
     engines: {node: '>=0.12'}
 
-  react-dom@19.0.0:
-    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
+  react-dom@19.2.1:
+    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
     peerDependencies:
-      react: ^19.0.0
+      react: ^19.2.1
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react@19.0.0:
-    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
+  react@19.2.1:
+    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -3289,8 +3292,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  scheduler@0.25.0:
-    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   scslre@0.3.0:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
@@ -5338,13 +5341,13 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/react-dom@19.0.3(@types/react@19.0.9)':
+  '@types/react-dom@19.2.3(@types/react@19.2.7)':
     dependencies:
-      '@types/react': 19.0.9
+      '@types/react': 19.2.7
 
-  '@types/react@19.0.9':
+  '@types/react@19.2.7':
     dependencies:
-      csstype: 3.1.3
+      csstype: 3.2.3
 
   '@types/unist@3.0.2': {}
 
@@ -5935,7 +5938,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  csstype@3.1.3: {}
+  csstype@3.2.3: {}
 
   data-view-buffer@1.0.1:
     dependencies:
@@ -7415,7 +7418,7 @@ snapshots:
       railroad-diagrams: 1.0.0
       randexp: 0.4.6
 
-  next@15.1.7(@babel/core@7.24.7)(react-dom@19.0.0(react@19.0.0))(react@19.0.0):
+  next@15.1.7(@babel/core@7.24.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       '@next/env': 15.1.7
       '@swc/counter': 0.1.3
@@ -7423,9 +7426,9 @@ snapshots:
       busboy: 1.6.0
       caniuse-lite: 1.0.30001646
       postcss: 8.4.31
-      react: 19.0.0
-      react-dom: 19.0.0(react@19.0.0)
-      styled-jsx: 5.1.6(@babel/core@7.24.7)(react@19.0.0)
+      react: 19.2.1
+      react-dom: 19.2.1(react@19.2.1)
+      styled-jsx: 5.1.6(@babel/core@7.24.7)(react@19.2.1)
     optionalDependencies:
       '@next/swc-darwin-arm64': 15.1.7
       '@next/swc-darwin-x64': 15.1.7
@@ -7779,14 +7782,14 @@ snapshots:
       discontinuous-range: 1.0.0
       ret: 0.1.15
 
-  react-dom@19.0.0(react@19.0.0):
+  react-dom@19.2.1(react@19.2.1):
     dependencies:
-      react: 19.0.0
-      scheduler: 0.25.0
+      react: 19.2.1
+      scheduler: 0.27.0
 
   react-is@16.13.1: {}
 
-  react@19.0.0: {}
+  react@19.2.1: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -7925,7 +7928,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  scheduler@0.25.0: {}
+  scheduler@0.27.0: {}
 
   scslre@0.3.0:
     dependencies:
@@ -8151,10 +8154,10 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
-  styled-jsx@5.1.6(@babel/core@7.24.7)(react@19.0.0):
+  styled-jsx@5.1.6(@babel/core@7.24.7)(react@19.2.1):
     dependencies:
       client-only: 0.0.1
-      react: 19.0.0
+      react: 19.2.1
     optionalDependencies:
       '@babel/core': 7.24.7
 
