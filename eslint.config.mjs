@@ -1,3 +1,6 @@
 import twoDigits from '@2digits/eslint-config';
 
-export default twoDigits();
+export default twoDigits({
+  tailwind: false,
+  pnpm: false,
+});
