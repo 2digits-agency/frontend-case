@@ -1,6 +1,6 @@
 [tools]
   pnpm = "10.4.1"
-  node = "22.14.0"
+  node = "22.22.2"
 
 [env]
   FORCE_COLOR = "1"
