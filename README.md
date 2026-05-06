@@ -62,3 +62,14 @@ The following Prepr models are needed for the project:
 - Page - Used to retrieve information for a page, such as the home page, blog archive, terms and conditions, etc...
 - Blog - Used to retrieve information for a blog detail page, latest blogs on the homepage, etc...
 - Navigation - Used to create the navigation for the header and for the footer. A navigation model contains one or multiple menu item models.
+
+## Running the project
+
+This project uses mise, a versatile version manager that helps you manage programming language runtimes and tools effortlessly. It ensures that everyone on the team uses the same versions, preventing compatibility issues. To install mise, follow the instructions in the official documentation, or use the following command if you have Homebrew installed:
+`brew install mise`
+
+If you have mise installed, you can use the following command to install the necessary tools for this project:
+`mise i`
+_Note: This installs project-specific versions of tools locally, without affecting system-wide configurations._
+
+After this, you can run `pnpm i` to install all necessary packages and `pnpm dev` to start the development server.
