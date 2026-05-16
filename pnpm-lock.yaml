@@ -40,8 +40,8 @@ importers:
         specifier: ^4.0.38
         version: 4.0.38(prettier@3.8.1)
       '@2digits/tsconfig':
-        specifier: ^0.8.6
-        version: 0.8.6(typescript@5.9.3)
+        specifier: ^0.8.7
+        version: 0.8.7(typescript@5.9.3)
       '@graphql-codegen/cli':
         specifier: ^6.1.2
         version: 6.1.2(@types/node@25.3.0)(graphql@16.13.0)(typescript@5.9.3)
@@ -108,10 +108,10 @@ packages:
     peerDependencies:
       prettier: 3.8.3
 
-  '@2digits/tsconfig@0.8.6':
-    resolution: {integrity: sha512-kmOTq6Q7YVfA/64p70IJa1X+dYoB2DdIpNkmyAyPrUJo551JAZs6m8ut4zVCGS3/f/eoFN1a6YVQuxbzZ9UU6w==}
+  '@2digits/tsconfig@0.8.7':
+    resolution: {integrity: sha512-uKkzbsxTBQgn1DLaEIyNacegdGJlrUZ5E5w9mFi6b5Qd5cGz86aCcvTDLulQAVOHC9rlIWSa7E7ysd9RjbjihA==}
     peerDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.2
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -4695,7 +4695,7 @@ snapshots:
       - prettier-plugin-svelte
       - supports-color
 
-  '@2digits/tsconfig@0.8.6(typescript@5.9.3)':
+  '@2digits/tsconfig@0.8.7(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
