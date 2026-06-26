@@ -37,7 +37,7 @@
     "@graphql-codegen/typescript-generic-sdk": "^5.0.1",
     "@graphql-codegen/typescript-operations": "^6.0.4",
     "@tailwindcss/postcss": "^4.3.0",
-    "@types/node": "^25.9.1",
+    "@types/node": "^25.9.4",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "eslint": "^10.4.0",
