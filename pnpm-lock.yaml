@@ -35,10 +35,10 @@ importers:
     devDependencies:
       '@2digits/eslint-config':
         specifier: ^5.1.12
-        version: 5.1.12(@types/node@25.9.4)(eslint@10.4.0(jiti@2.6.1))(graphql@16.14.2)(jiti@2.6.1)(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(tailwindcss@4.3.0)(turbo@2.9.18)(typescript@5.9.3)(zod@3.23.8)
+        version: 5.1.12(@types/node@25.9.4)(eslint@10.4.0(jiti@2.6.1))(graphql@16.14.2)(jiti@2.6.1)(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(tailwindcss@4.3.0)(turbo@2.9.18)(typescript@5.9.3)(zod@3.23.8)
       '@2digits/prettier-config':
         specifier: ^4.0.41
-        version: 4.0.41(prettier@3.8.3)
+        version: 4.0.41(prettier@3.8.5)
       '@2digits/tsconfig':
         specifier: ^0.8.7
         version: 0.8.7(typescript@5.9.3)
@@ -76,8 +76,8 @@ importers:
         specifier: ^8.5.15
         version: 8.5.15
       prettier:
-        specifier: ^3.8.3
-        version: 3.8.3
+        specifier: ^3.8.5
+        version: 3.8.5
       tailwindcss:
         specifier: ^4.3.0
         version: 4.3.0
@@ -3720,8 +3720,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.8.3:
-    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+  prettier@3.8.5:
+    resolution: {integrity: sha512-zxcTTCedNGJM4R8sj/Cq/F0W/c4iE0afWBcBwMTRtw4WHYP9TWkYjdiH3npPRUYsXQCPR0hTU9yjovOu+E6EQA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4270,7 +4270,7 @@ snapshots:
 
   '@2digits/constants@1.1.18': {}
 
-  '@2digits/eslint-config@5.1.12(@types/node@25.9.4)(eslint@10.4.0(jiti@2.6.1))(graphql@16.14.2)(jiti@2.6.1)(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(tailwindcss@4.3.0)(turbo@2.9.18)(typescript@5.9.3)(zod@3.23.8)':
+  '@2digits/eslint-config@5.1.12(@types/node@25.9.4)(eslint@10.4.0(jiti@2.6.1))(graphql@16.14.2)(jiti@2.6.1)(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(tailwindcss@4.3.0)(turbo@2.9.18)(typescript@5.9.3)(zod@3.23.8)':
     dependencies:
       '@2digits/constants': 1.1.16
       '@2digits/eslint-plugin': 4.0.4(jiti@2.6.1)(typescript@5.9.3)
@@ -4304,7 +4304,7 @@ snapshots:
       eslint-plugin-react-compiler: 19.1.0-rc.2(eslint@10.4.0(jiti@2.6.1))
       eslint-plugin-regexp: 3.0.0(eslint@10.4.0(jiti@2.6.1))
       eslint-plugin-sonarjs: 4.0.0(eslint@10.4.0(jiti@2.6.1))
-      eslint-plugin-storybook: 10.2.10(eslint@10.4.0(jiti@2.6.1))(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(typescript@5.9.3)
+      eslint-plugin-storybook: 10.2.10(eslint@10.4.0(jiti@2.6.1))(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(typescript@5.9.3)
       eslint-plugin-tailwindcss: 3.18.2(tailwindcss@4.3.0)
       eslint-plugin-toml: 1.1.1(eslint@10.4.0(jiti@2.6.1))
       eslint-plugin-turbo: 2.8.10(eslint@10.4.0(jiti@2.6.1))(turbo@2.9.18)
@@ -4349,16 +4349,16 @@ snapshots:
       - supports-color
       - typescript
 
-  '@2digits/prettier-config@4.0.41(prettier@3.8.3)':
+  '@2digits/prettier-config@4.0.41(prettier@3.8.5)':
     dependencies:
       '@2digits/constants': 1.1.18
-      '@ianvs/prettier-plugin-sort-imports': 4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.3)
+      '@ianvs/prettier-plugin-sort-imports': 4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.5)
       '@prettier/plugin-oxc': 0.1.4
-      '@prettier/plugin-xml': 3.4.2(prettier@3.8.3)
+      '@prettier/plugin-xml': 3.4.2(prettier@3.8.5)
       local-pkg: 1.2.1
-      prettier: 3.8.3
-      prettier-plugin-jsdoc: 1.8.1(prettier@3.8.3)
-      prettier-plugin-tailwindcss: 0.8.0(@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.3))(@prettier/plugin-oxc@0.1.4)(prettier-plugin-jsdoc@1.8.1(prettier@3.8.3))(prettier@3.8.3)
+      prettier: 3.8.5
+      prettier-plugin-jsdoc: 1.8.1(prettier@3.8.5)
+      prettier-plugin-tailwindcss: 0.8.0(@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.5))(@prettier/plugin-oxc@0.1.4)(prettier-plugin-jsdoc@1.8.1(prettier@3.8.5))(prettier@3.8.5)
     transitivePeerDependencies:
       - '@prettier/plugin-hermes'
       - '@prettier/plugin-pug'
@@ -5676,13 +5676,13 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.3)':
+  '@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.5)':
     dependencies:
       '@babel/generator': 7.29.1
       '@babel/parser': 7.29.7
       '@babel/traverse': 7.29.0
       '@babel/types': 7.29.7
-      prettier: 3.8.3
+      prettier: 3.8.5
       semver: 7.7.4
     optionalDependencies:
       '@prettier/plugin-oxc': 0.1.4
@@ -6051,10 +6051,10 @@ snapshots:
     dependencies:
       oxc-parser: 0.125.0
 
-  '@prettier/plugin-xml@3.4.2(prettier@3.8.3)':
+  '@prettier/plugin-xml@3.4.2(prettier@3.8.5)':
     dependencies:
       '@xml-tools/parser': 1.0.11
-      prettier: 3.8.3
+      prettier: 3.8.5
 
   '@repeaterjs/repeater@3.0.6': {}
 
@@ -7200,11 +7200,11 @@ snapshots:
       ts-api-utils: 2.4.0(typescript@5.9.3)
       typescript: 5.9.3
 
-  eslint-plugin-storybook@10.2.10(eslint@10.4.0(jiti@2.6.1))(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(typescript@5.9.3):
+  eslint-plugin-storybook@10.2.10(eslint@10.4.0(jiti@2.6.1))(storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(typescript@5.9.3):
     dependencies:
       '@typescript-eslint/utils': 8.56.0(eslint@10.4.0(jiti@2.6.1))(typescript@5.9.3)
       eslint: 10.4.0(jiti@2.6.1)
-      storybook: 10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      storybook: 10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -8486,24 +8486,24 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-jsdoc@1.8.1(prettier@3.8.3):
+  prettier-plugin-jsdoc@1.8.1(prettier@3.8.5):
     dependencies:
       binary-searching: 2.0.5
       comment-parser: 1.4.5
       mdast-util-from-markdown: 2.0.3
-      prettier: 3.8.3
+      prettier: 3.8.5
     transitivePeerDependencies:
       - supports-color
 
-  prettier-plugin-tailwindcss@0.8.0(@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.3))(@prettier/plugin-oxc@0.1.4)(prettier-plugin-jsdoc@1.8.1(prettier@3.8.3))(prettier@3.8.3):
+  prettier-plugin-tailwindcss@0.8.0(@ianvs/prettier-plugin-sort-imports@4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.5))(@prettier/plugin-oxc@0.1.4)(prettier-plugin-jsdoc@1.8.1(prettier@3.8.5))(prettier@3.8.5):
     dependencies:
-      prettier: 3.8.3
+      prettier: 3.8.5
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.3)
+      '@ianvs/prettier-plugin-sort-imports': 4.7.1(@prettier/plugin-oxc@0.1.4)(prettier@3.8.5)
       '@prettier/plugin-oxc': 0.1.4
-      prettier-plugin-jsdoc: 1.8.1(prettier@3.8.3)
+      prettier-plugin-jsdoc: 1.8.1(prettier@3.8.5)
 
-  prettier@3.8.3: {}
+  prettier@3.8.5: {}
 
   pretty-format@27.5.1:
     dependencies:
@@ -8687,7 +8687,7 @@ snapshots:
 
   sponge-case@2.0.3: {}
 
-  storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
+  storybook@10.2.12(@testing-library/dom@10.4.1)(prettier@3.8.5)(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/icons': 2.0.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
@@ -8702,7 +8702,7 @@ snapshots:
       use-sync-external-store: 1.6.0(react@19.2.6)
       ws: 8.19.0
     optionalDependencies:
-      prettier: 3.8.3
+      prettier: 3.8.5
     transitivePeerDependencies:
       - '@testing-library/dom'
       - bufferutil
