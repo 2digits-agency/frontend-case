@@ -28,7 +28,7 @@
     "tailwind-variants": "^3.2.2"
   },
   "devDependencies": {
-    "@2digits/eslint-config": "^5.1.12",
+    "@2digits/eslint-config": "^5.5.7",
     "@2digits/prettier-config": "^4.0.41",
     "@2digits/tsconfig": "^0.8.7",
     "@graphql-codegen/cli": "^7.1.3",
